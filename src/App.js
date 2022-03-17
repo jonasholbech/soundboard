@@ -31,7 +31,12 @@ function App() {
       </Appbar>
       <audio ref={audioEl}></audio>
       {data.map((sound) => (
-        <Button key={sound} color="primary" onClick={() => play(sound)}>
+        <Button
+          size="large"
+          key={sound}
+          color="accent"
+          onClick={() => play(sound)}
+        >
           {sound}
         </Button>
       ))}
